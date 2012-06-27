@@ -3,6 +3,8 @@
 ## Getting it
 
     git clone --recursive git://github.com/b00y0h/wordpress.git
+    cd wordpress
+    cp dev_settings_sample.php dev_settings.php
 
 ## Configure for you
 
