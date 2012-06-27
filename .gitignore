@@ -1,2 +1,3 @@
 wp-content/plugins/*
 wp-content/themes/*
+dev_settings.php
