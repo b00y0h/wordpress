@@ -12,7 +12,8 @@ copy `dev_settings_sample.php` to `dev_settings.php` and edit with your db setti
     cp dev_settings_sample.php dev_settings.php
     
 ## Updating Wordpress
-    cd wordpress
+
+    cd wordpress-core
     git fetch --tags
     git checkout 3.4
 
