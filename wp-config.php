@@ -14,6 +14,11 @@
  * @package WordPress
  */
 
+if (file_exists( dirname(__FILE__) . '/dev_settings.php')) {
+  include('dev_settings.php');
+}
+else {
+
 define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
 define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
@@ -39,6 +44,10 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+}
+
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
