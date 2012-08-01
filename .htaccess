@@ -1,0 +1,1 @@
+RewriteRule ^login$ http://wordpress/wordpress-core/wp-login.php [NC,L]
