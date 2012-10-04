@@ -6,3 +6,4 @@ wp-content/themes/*/.sass-cache/*
 wp-content/uploads/
 
 wp-content/themes/
+phpinfo.php
