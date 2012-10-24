@@ -95,12 +95,11 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', $debug_on);
-/**
- * This will log all errors notices and warnings to a file called debug.log in
- * wp-content (if Apache does not have write permission, you may need to create
- * the file first and set the appropriate permissions (i.e. use 666) ) 
- */
+
+// Enable Debug logging to the /wp-content/debug.log file
 define('WP_DEBUG_LOG', true);
+
+// Disable display of errors and warnings 
 define('WP_DEBUG_DISPLAY', false);
 @ini_set('display_errors',0);
 
