@@ -15,11 +15,11 @@ copy `dev_settings_sample.php` to `dev_settings.php` and edit with your db setti
 
     cd wordpress-core
     git fetch --tags
-    git checkout 3.4
+    git checkout 3.5.1
 
-Replace 3.4 with the correct version number.
+Replace 3.5.1 with the correct version number.
 
 Now commit the changes subrepository version to your main project:
 
     cd ..
-    git commit -m "Update Wordpress to version 3.4"
+    git commit -m "Update Wordpress to version 3.5.1"
