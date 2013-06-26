@@ -19,6 +19,8 @@ define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
+// make jetpack work on local dev
+define ('JETPACK_DEV_DEBUG', true);
 
 if (file_exists( dirname(__FILE__) . '/dev_settings.php')) {
   include('dev_settings.php');
@@ -99,7 +101,7 @@ define('WP_DEBUG', $debug_on);
 // Enable Debug logging to the /wp-content/debug.log file
 define('WP_DEBUG_LOG', true);
 
-// Disable display of errors and warnings 
+// Disable display of errors and warnings
 define('WP_DEBUG_DISPLAY', false);
 @ini_set('display_errors',0);
 
@@ -108,7 +110,9 @@ define('WP_DEBUG_DISPLAY', false);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+	define('ABSPATH', dirname(__FILE__) . '/wordpress-core/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+// echo nl2br(print_r(@get_defined_constants(),true));
