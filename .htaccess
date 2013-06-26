@@ -1,4 +1,4 @@
-RewriteRule ^login$ /wordpress-core/wp-login.php [NC,L]
+RewriteRule ^login$ /wordpress-core/wp-admin/ [NC,L]
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -13,3 +13,7 @@ RewriteRule . /index.php [L]
 
 php_value upload_max_filesize 1024M
 php_value post_max_size 1056M
+
+# rewrites for agriberry only
+# RewriteCond %{HTTP_HOST} =newwebsite.com
+# Redirect 301 /old/content http://newwebsite.com/new/content/
