@@ -2,6 +2,9 @@
 
 $debug_on = true;
 
+// disable revisions
+define('WP_POST_REVISIONS', false );
+
 /** The name of the database for WordPress */
 define('DB_NAME', '');
 
