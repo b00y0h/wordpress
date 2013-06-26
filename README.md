@@ -22,4 +22,5 @@ Replace 3.5.1 with the correct version number.
 Now commit the changes subrepository version to your main project:
 
     cd ..
+    git add wordpress-core
     git commit -m "Update Wordpress to version 3.5.1"
