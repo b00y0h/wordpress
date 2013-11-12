@@ -19,6 +19,10 @@ define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
+// automatic updates includeing development, major and minor releases
+define( 'WP_AUTO_UPDATE_CORE', true );
+
+
 // make jetpack work on local dev
 define ('JETPACK_DEV_DEBUG', true);
 
